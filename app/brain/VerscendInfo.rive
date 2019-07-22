@@ -1,0 +1,153 @@
+// Tell the user stuff about VerscendInfo.
+
++ [*](mission)[*]
+- mission: <bot mission>
+
++ [*](values)[*]
+- verscend values are <bot values>
+
++ [*](collaborative)[*]
+- <bot collaborative>
+
++ [*](accountable)[*]
+- <bot accountable>
+
++ [*](employee|vemployee|employees|vemployees)[*]
+- <bot emlpoyeelink> : <a href = "http://vemployee/" target="_blank" >vemployee</a>
+
++ [*](canteen app|lunch|order|orders|dinner|snacks|snack|canteen|canteens|food|foods)[*]
+- <bot canteenapp> : <a href = "http://canteen.d2hs.com:8400/CanteenManagement/login.jsp" target="_blank" >click here </a>
+
++ [*] (vconnect) [*]
+- <bot vconnect> : <a href = "http://vconnect.d2hs.com" target="_blank" >vconnect</a>
+
+
+
++ [*] (vlibrary|library) [*]
+- <bot vlibrary> : <a href = "http://vlibrary.d2hs.com/login.php" target="_blank" >vlibrary</a>
+
++ [*] (compliance) [*]
+- <bot compliance> : <a href = "https://verscend.sharepoint.com/sites/intranet/dept/compliance" target="_blank" >compliance</a>
+
++ [*] (verscend offices|verscend branch|verscend counterpart) [*]
+- verscend operates from following location : <bot verscendOffices>
+
++ [*] (southjordan|sojo) [*]
+- contact detail of southjordan office : <bot southJordan>
+
++ [*] (waltham) [*]
+- contact detail of waltham office : <bot Waltham>
+
++ [*] (morrisville) [*]
+- contact detail of morrisville : <bot Morrisville>
+
++ [*] (richmond) [*]
+- contact detail of richmond : <bot richmond>
+
++ [*] (kathmandu|ktm) [*]
+- contact detail of kathmandu: <bot kathmandu>
+
++ [*] (draper) [*]
+- contact detail of draper: <bot draper>
+
++ [*] (towson) [*]
+- contact detail of towson: <bot towson>
+
++ [*] (meeting room|conference room) [*]
+- meeting rooms in verscend <bot meetingroom>
+
++ [*] (rara|ground floor|groundth meeting room) [*]
+- details of meeting room aara <bot rara>
+
++ [*] (phewa) [*]
+- details of meeting room aara <bot phewa>
+
++[*](gb|rupa|ground floor meeting room|gruond floor room)[*]
+- details of meeting room rupaa<bot rupa>
+
++ [*](2a|phoksundo|2th floor|second floor)[*]
+- details of meeting room phoksundo <bot phoksundo>
+
++ [*](3b|gosainkunda|3th floor|third floor)[*]
+- details of meeting room gosaikunda <bot gosainkunda>
+
++ [*] (gokyo|4th floor|fourth floor|4th|fourth|four floor) [*]
+- details of meeting room gokyo <bot gokyo>
+
++ [*](5a|tilicho|5th floor|fiveth floor)[*]
+- details of meeting room tilicho <bot tilicho>
+
++ [*](office time|office hours|office hrs|working hours|working hrs)[*]
+-  working hours of verscend <bot officetime>
+
++ [*] (new baneshwor|new baneshower|tinkune|koteshower|koteshwor|bhaktapur|jadibuti|lokanthali|kaushaltar|ghatthaghar|urano thimi|byasi|chyamasing|suryabinak) [*]
+- <bot route1>
+
++ [*] (lazimpat|maharajgunj|basundhara|balaju|kalanki|rabibhawan|kalimati) [*]
+- <bot route2>
+
++ [*] (gyaneshwor|gyaneshower|maitidevi|purano baneshower|gaushala|chabel) [*]
+- <bot route3>
+
++ [*] (putalisadak|maitighar|baneshower|sankhamul|chakupat|patan dhoka|patan|patan sundhara|guwarko|mahalaxmithan|akantakuna) [*]
+- <bot route4>
+
++ [*] (quiz) [*]
+- <bot quiz> <a href = "http://canteen.d2hs.com:8400/CanteenManagement/login.jsp"  target="_blank" >click here </a>
+
++ [*] (hr) [*]
+- You can contact with hr by this extension numbers for any queries : <bot hr>
+
++ [*] (it) [*]
+- You can contact with IT by this extension numbers for any queries : <bot it>
+
++ [*] (front desk|reception|receptions) [*]
+- You can reach out front desk with extension numbers : <bot front desk>
+
++ [*] (office manager) [*]
+- You can reach out office manager with extension number : <bot office manager>
+
++ [*] (calender|calenders) [*]
+- <bot calender> : <a href = "https://verscend.sharepoint.com/sites/intranet/dept/nepal/calendar/calendar.aspx" target="_blank" >Click here</a>
+
++ [*] (department|departments) [*]
+- List of the department : <bot department>
+
++ [*] (payroll|timesheet|time sheet) [*]
+- <bot payroll> :<a href = "https://vitpayroll/Employee/Default.aspx" target="_blank" >Click here<a>
+
++[*](transportation| about vehicle)[*]
+- Please contact with office manager and you can type your destination
+
++[*] (parking|park|parks) [*]
+- We have under ground parking
+
++[*] (verscend) [*]
+- Vescend technologies located at hatisar kathmandu
+
++ [*] (departure) [*]
+- Office van will departure at 7:20 pm
+
++ [*] (arrive|arriving|arrives|arrived) [*]
+- Office van arrives at 10:00 am
+
++ [*] (doctor|doctors|health problem) [*]
+- Please contact with doctor using this extension : <bot doctor>
+
++[*] (service now | servicenow) [*]
+- <bot servicenow> : <a href = "https://verscend.service-now.com/sp/">service now</a>
+
++[*] (lunch time|lunchtime ) [*]
+- <bot lunchtime>
+
++[*] (snaks time|snaks|snak|snak time) [*]
+- <bot snaktime>
+
++[*] (dinnertime|dinner time|dinner) [*]
+- <bot dinnertime>
+
++ [*] (canteen ext|canteen number|canteen contact number|canteen contact|canteen extension) [*]
+- <bot canteenext>
+
++ [*] (guard|security) [*]
+- <bot guard>

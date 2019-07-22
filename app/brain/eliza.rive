@@ -1,0 +1,62 @@
+// A generic set of chatting responses. This set mimicks the classic Eliza bot.
+
++ *
+- I'm not sure I understand you fully.
+- Please go on.
+- That is interesting. Please continue.
+- Tell me more about that.
+
+
++ [*] (sorry|apologize|apology) [*]
+- Please don't apologize.
+- Apologies are not necessary.
+- I've told you that apologies are not required.
+- It did not bother me. Please continue.
+
++ (hello|hi|hey|howdy|hola|hai|yo|what's up|wassup|whats up) [*]
+- How do you do. Please state your problem.
+- Hi. What seems to be the problem?
+
+
+
+
+
+
++ i am *
+- Is it because you are <star> that you came to me?
+- How long have you been <star>?
+- Do you believe it is normal to be <star>?
+- Do you enjoy being <star>?
+- Do you know anyone else who is <star>?
+
++ [*] (yes|yeah|yep|yup) [*]
+- Please go on.
+- Please tell me more about this.
+- Why don't you tell me a little more about this.
+- I see.
+- I understand.
+
++ [*] (nope|nah) [*]
+- Are you saying no just to be negative?
+- Does this make you feel unhappy?
+- Why not?
+- Why 'no'?
+
++ no
+@ nope
+
++ no one *
+- Are you sure, no one <star>?
+- Surely someone <star>.
+- Can you think of anyone at all?
+- Are you thinking of a very special person?
+- Who, may I ask?
+- You have a particular person in mind, don't you?
+- Who do you think you are talking about?
+
+
++ can you help [*]
+- Yes, i can help you.
+
++ (thank you|thanks|thank) [*]
+- You are welcome

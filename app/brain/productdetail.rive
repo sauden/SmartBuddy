@@ -1,0 +1,21 @@
+// Tell the user stuff about Verscendproduct.
+
++ [*] (products|product|produc|prod) [*]
+- <bot product>
+
++ [*] (payment accuracy|payment) [*]
+- <bot payment accuracy><a href = "https://www.verscend.com/payment-accuracy-solution">click here</a> 
+
++[*] (quality and performance|quality performance|quality|performance) [*]
+- <bot quality and performance>
+
++ [*](mediconnect|mediconect) [*]
+- <bot mediconnect>
+
++ [*] (risk adjustment|risk|risk adjust) [*]
+-  <bot risk adjustment>
+
+
+
+
+

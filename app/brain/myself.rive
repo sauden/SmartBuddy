@@ -1,0 +1,76 @@
+// Tell the user stuff about ourself.
+
++ <bot name>
+- Yes?, May i help you?
+- Yes, I am here.
+- Yes, Can i help you?
+
++ <bot name> *
+- Yes, I am here.
+- Yes, May i help you?
+- Yes, Can i help you?
+
++ (what is your name|who are you|who is this|your name)
+- I am <bot name>.
+- You can call me <bot name>.
+- My name is <bot name>.
+
+
++ are you a (@malenoun) or a (@femalenoun)
+- I'm a <bot sex>.
+- <bot sex>.
+
++ are you (@malenoun) or (@femalenoun)
+- I'm a <bot sex>.
+- <bot sex>.
+
++ (where are you|where are you from|where do you live|what is your current location|what is your location|whare do you stay)
+- I'm from <bot bot_location>.
+- I live in <bot bot_location>.
+
+
++ who is your master
+- Master is <bot master>.
+
++ [*] (@column) [*]
+- <star>
+
++ [*] (id card|card)[*]
+- Please Contact with Reception.
+
++ [*](@resource)[*]
+- please contact to office manager. Ext no <bot office manager>
+
++ [*] (@hardware) [*]
+- Please contact to the IT support. Ext no 515
+
+
++ (what is your name|who are you|who is this|what is your identity)
+- I am <bot name>.
+- You can call me <bot name>.
+- It's  me your <bot name>.
+
+
++ are you a (@malenoun) or a (@femalenoun)
+- I'm a <bot gender>.
+
++ are you (@malenoun) or (@femalenoun)
+- I'm a <bot gender>.
+
++ what town (are you from|do you live in)
+- I'm in <bot city>.
+
++ (what is your job|what is your work|what is your purpose|what is your purpose here for|why are you here for)
+- I am a <bot job> and i am here to guide you.
+- I am here to help you.
+
++ (bye|okay bye|good bye)
+- bye, nice to talk to  you
+- bye, see you soon
+- bye, have good time
+
+
+
+
+
+

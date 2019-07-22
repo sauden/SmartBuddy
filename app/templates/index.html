@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+
+<style class="cp-pen-styles">
+	body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:#e6e2e2;
+  font-family: "proxima-nova", "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.1px;
+  color: #cdcde0;
+  text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+}
+
+#frame {
+	border-radius: 10px;
+  width: 95%;
+  min-width: 360px;
+  max-width: 1000px;
+  height: 92vh;
+  min-height: 300px;
+  max-height: 720px;
+  background: #E6EAEA;
+}
+@media screen and (max-width: 360px) {
+  #frame {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+#frame .content {
+  border-style: solid;
+    float: right;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background-color: #e8ecec;
+    border-width: 1px;
+}
+@media screen and (max-width: 735px) {
+  #frame .content {
+    width: calc(100%);
+    min-width: 300px !important;
+  }
+}
+@media screen and (min-width: 900px) {
+  #frame .content {
+    width: calc(100%);
+  }
+}
+#frame .content .contact-profile {
+      width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #6093e2;
+    font-family: Serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+#frame .content .contact-profile img {
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin: 9px 12px 0 9px;
+}
+#frame .content .contact-profile p {
+  float: left;
+	color: white;
+}
+#frame .content .contact-profile .social-media {
+  float: right;
+}
+#frame .content .contact-profile .social-media i {
+  margin-left: 14px;
+  cursor: pointer;
+}
+#frame .content .contact-profile .social-media i:nth-last-child(1) {
+  margin-right: 20px;
+}
+#frame .content .contact-profile .social-media i:hover {
+  color: #435f7a;
+}
+#frame .content .messages {
+  height: auto;
+    min-height: calc(100% - 93px);
+    max-height: calc(100% - 93px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: white;
+}
+@media screen and (max-width: 735px) {
+  #frame .content .messages {
+    max-height: calc(100% - 105px);
+  }
+}
+#frame .content .messages::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+#frame .content .messages::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#frame .content .messages ul li {
+  display: inline-block;
+  clear: both;
+  float: left;
+  margin: 15px 15px 5px 15px;
+  width: calc(100% - 25px);
+  font-size: 0.9em;
+}
+#frame .content .messages ul li:nth-last-child(1) {
+  margin-bottom: 20px;
+}
+#frame .content .messages ul li.sent img {
+  margin: 6px 8px 0 0;
+}
+#frame .content .messages ul li.sent p {
+  background: #2385e4;
+    color: #f5f5f5;
+}
+#frame .content .messages ul li.replies img {
+  float: right;
+  margin: 6px 0 0 8px;
+}
+#frame .content .messages ul li.replies p {
+  background: #d9dede;
+    float: right;
+    color: black;
+}
+#frame .content .messages ul li img {
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+}
+#frame .content .messages ul li p {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 205px;
+  line-height: 130%;
+}
+@media screen and (min-width: 735px) {
+  #frame .content .messages ul li p {
+    max-width: 450px;
+  }
+}
+#frame .content .message-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+#frame .content .message-input .wrap {
+  position: relative;
+	border-style: solid;
+	border-width: 1px;
+}
+#frame .content .message-input .wrap input {
+  font-family: "proxima-nova",  "Source Sans Pro", sans-serif;
+  float: left;
+  border: none;
+  width: calc(100% - 90px);
+  padding: 11px 32px 10px 8px;
+  font-size: 0.8em;
+  color: #32465a;
+}
+@media screen and (max-width: 735px) {
+  #frame .content .message-input .wrap input {
+    padding: 15px 32px 16px 8px;
+  }
+}
+#frame .content .message-input .wrap input:focus {
+  outline: none;
+}
+#frame .content .message-input .wrap .attachment {
+  position: absolute;
+  right: 60px;
+  z-index: 4;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #435f7a;
+  opacity: .5;
+  cursor: pointer;
+}
+@media screen and (max-width: 735px) {
+  #frame .content .message-input .wrap .attachment {
+    margin-top: 17px;
+    right: 65px;
+  }
+}
+#frame .content .message-input .wrap .attachment:hover {
+  opacity: 1;
+}
+#frame .content .message-input .wrap button {
+  float: right;
+  border: none;
+  width: 50px;
+  padding: 12px 0;
+  cursor: pointer;
+  background: #32465a;
+  color: #f5f5f5;
+}
+@media screen and (max-width: 735px) {
+  #frame .content .message-input .wrap button {
+    padding: 16px 0;
+  }
+}
+#frame .content .message-input .wrap button:hover {
+  background: #435f7a;
+}
+#frame .content .message-input .wrap button:focus {
+  outline: none;
+}
+
+
+</style>
+</head><body>
+
+<div id="frame">
+	<div class="content">
+		<div class="contact-profile">
+			<img src="/static/logo.gif" alt="" />
+			<p>SMART BUDDY</p>
+
+		</div>
+		<div class="messages">
+			<ul class="js-chat-log">
+				<!--<li class="sent ">-->
+					<!--<img src="/static/user.png" alt="" />-->
+					<!--<p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>-->
+				<!--</li>-->
+				<!--<li class="replies">-->
+					<!--<img src="/static/bot.png" alt="" />-->
+					<!--<p>When you're backed against the wall, break the god damn thing down.</p>-->
+				<!--</li>-->
+
+			</ul>
+
+		</div>
+		<div class="message-input">
+			<div class="wrap">
+			<input class="js-text" type="text" placeholder="Write your message..." />
+			<button class="submit js-say"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+ var $chatlog = $('.js-chat-log');
+      var $input = $('.js-text');
+      var $sayButton = $('.js-say');
+
+       function createRow(text) {
+        var $row = $('<li class="sent"></li>');
+        $chatlog.append($row);
+        $('<img src="/static/user.png" alt="" />').appendTo($row);
+        $("<p>" + text+"</p>").appendTo($row );
+ $(".messages").animate({ scrollTop: $(document).height() * $(document).height()}, "fast");
+      }
+
+      function createResponseRow(text) {
+      var $row = $('<li class="replies"></li>');
+        $chatlog.append($row);
+$('<img src="/static/bot.png" alt="" />').appendTo($row);
+         $("<p>" + text+"</p>").appendTo($row );
+ $(".messages").animate({ scrollTop: $(document).height()* $(document).height() }, "fast");
+      }
+
+       function submitInput() {
+        var inputData = {
+          'text': $input.val()
+        }
+
+        // Display the user's input on the web page
+        createRow(inputData.text);
+
+        var $submit = $.ajax({
+          type: 'POST',
+          url: '/testurl',
+
+          data: inputData,
+          contentType: 'application/json'
+        });
+
+        $submit.done(function(result) {
+
+            createResponseRow(result);
+            //console.log(result.response);
+            // Clear the input field
+            $input.val('');
+
+            // Scroll to the bottom of the chat interface
+            //$chatlog[0].scrollTop = $chatlog[0].scrollHeight;
+            $(".messages").animate({ scrollTop: $(document).height() * $(document).height()}, "fast");
+        });
+
+        $submit.fail(function() {
+          // TODO: Handle errors
+        });
+      }
+
+       $sayButton.click(function() {
+        submitInput();
+      });
+
+      $input.keydown(function(event) {
+        // Submit the input when the enter button is pressed
+        if (event.keyCode == 13) {
+          submitInput();
+        }
+      });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+// Tell the user stuff about ushealthcare.
+
+
+
++  [*]  (pcp|primary care physician) [*]
+- <bot pcp>
+
++  [*]  (disease management|dm) [*]
+- <bot disease management>
+
++  [*]  (care management|cm) [*]
+- <bot care management>
+
++  [*]  (pho|physician hospital organisation|physician hospital organizationation) [*]
+- <bot pho>
+
++  [*]  (ffp|fraud finder pro) [*]
+- <bot ffp>
+
++  [*]  (rxi | pharmacy claim insight)[*]
+- <bot rxi>
+
++  [*]  (cra|clinical research associate)[*]
+- <bot cra>
+
++  [*]  (ciu|chronic idiopathic urticaria)[*]
+- <bot ciu>
+
++  [*]  (appeals|appeal)[*]
+- <bot appeals>
+
++  [*]  (flag|flags|flg)[*]
+- <bot flag>
+
++  [*]  (edit|edits)[*]
+- <bot edit>
+
++  [*]  (rpe|rule processing engine)[*]
+- <bot rpe>
+
++  [*]  (fci|facility claim insight)[*]
+- <bot fci>
+
++  [*]  (oci|oncology claim insight|oncology)[*]
+- <bot oci>
+
++  [*]  (dci|dental claim insight)[*]
+- <bot dci>
+
++  [*]  (pci|physician claim insight)[*]
+- <bot pci>
+
++  [*]  (tpa|third tarty administrators|third tarty tdministrator|third party admin)[*]
+- <bot tpa>
+
++  [*]  (pos|point of service)[*]
+- <bot pos>
+
++  [*]  (government insurance)[*]
+- <bot government insurance>
+
++ [*] (group insurance) [*]
+- <bot group insurance>
+
++  [*]  (private non group|png)[*]
+- <bot private non group>
+
++  [*]  (government insurance)[*]
+- <bot government insurance>
+
++  [*]  (out of pocket payment)[*]
+- <bot out of pocket payment>
+
++  [*]  (health care)[*]
+- <bot health care>
+
++  [*]  (aco|accountable care organisation|accountable care organization)[*]
+- <bot aco>
+
++  [*]  (pbm|pharmacy benefit management)[*]
+- <bot pbm>
+
+
++  [*]  (allowed amount|allowed|allow|allow amount)[*]
+- <bot allowed amount>
+
++  [*]  (medicaid)[*]
+- <bot medicaid>
+
++  [*]  (medicare)[*]
+- <bot medicare>
+
++  [*]  (icd 10)[*]
+- <bot icd 10>
+
++  [*]  (claims|claim)[*]
+- <bot claims>
+
++  [*]  (coinsurance)[*]
+- <bot coinsurance>
+
++  [*]  (premium)[*]
+- <bot premium>
+
++  [*]  (provider|providers|prov)[*]
+- <bot provider>
+
++  [*]  (hippa)[*]
+- <bot hippa>
+
++ [*] (rev|rev code|revenue code) [*]
+- <bot rev>
+
++ [*] (diagnosis|diag code|diagnosis code|diag) [*]
+- <bot diagnosis>
+

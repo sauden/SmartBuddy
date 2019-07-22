@@ -1,0 +1,293 @@
+! version = 2.0
+
+> begin
+	+ request // This trigger is tested first.
+	- {ok}    // An {ok} in the response means it's okay to get a real reply
+< begin
+
+// The Botmaster's Name
+! var master = localuser
+
+// Bot Variables
+//myself variable
+! var bot_location = Verscend Technologies pvt. ltd
+! var gender = bot
+! var master = *Wildcards*
+! var name = smartbuddy
+! var city = Kathmandu
+! var job = virtual assistant
+
+//Ushealthcare Variables
+! var deductible = The amount you pay for covered health care services before your insurance plan starts to pay. With a $2,000 deductible, for example, you pay the first $2,000 of covered services yourself.
+! var pcp      = A physician who serves as a group member's primary contact within the health plan.
+! var disease management    = Disease management organizations manage individual members to ensure appropriate care is received for particular cases while managing health care expenditures (CM) and to ensure entire populations susceptible to a particular disease are managing their health conditions (DM).  
+! var care management      = A physician who serves as a group member's primary contact within the health plan. Disease management organizations manage individual members to ensure appropriate care is received for particular cases while managing health care expenditures (CM) and to ensure entire populations susceptible to a particular disease are managing their health conditions (DM).  
+! var pho      = AlliancDisease Management es between physicians and hospitals to help providers attain market share, improve bargaining power and reduceadministrative costs. 
+! var ffp      = It is a Fraud Finder Pro.
+! var rxi      = Pharma Claim Insight, a vertical targeting pharmaceutical claims
+! var cra      = Cost Reduction Analysis, part of the sales process where HCI runs a potential customers claims through our system to identify savings
+! var ciu      =  A physician who serves as a group member's primary contact within the health plan.
+! var appeals  = Providers may appeal decisions by a customer to not pay a claim
+! var flag     = An attribute put onto a claim which has triggered an edit
+! var edit     = Logic which detects incorrect billing of claims 
+! var rule     = Logic which detects a billing mistake or a pattern of fraudulent behavior (generic for edit or condition)
+! var rpe      = Rules Processing Engine, a homegrown C# application that executes a set of edits against claims. A triggered edit produces a flag
+! var fci      = Facility Claim Insight, a vertical targeting facility claims
+! var oci      = Oncology Claim Insight, a vertical targeting oncology claims
+! var dci      = Dental Claim Insight, a vertical targeting dental claims
+! var pci      = PHYSICAN CLAIM INSIGHT.The department of the Payment Accuracy Division reviews physician and outpatient hospital claims for clinical validation and correct coding.Edits are applied based on CMS, CPT and general coding guidelines
+! var tpa      = Third Party Administrators pay claims on behalf of self-funded clients. 
+! var pos      = Organizations in which insurers contract with a limited number of physicians  and hospitals  (“in network”) who agree to care for patients, usually on a discounted Fee-for-service basis.
+! var government insurance   = Government plans are funded by tax dollars and only certain individuals are allowed to receive benefits.Government Insurance: Government plans are funded by tax dollars and only certain individuals are allowed to receive benefits. Medicare and Medicaid are two types of government plans. 
+! var group insurance        = Employers pay some or all of health insurance premiums to the health plan on behalf of the employee
+! var private non group      = A third party, the insurance plan (“health plan”), is added, dividing payment into a financing component and a reimbursement component.
+! var out of pocket payment  = Payment is directly made from patient to provider
+! var health care = Health care in the United States is provided by many distinct organizations. Health care facilities are largely owned and operated by private sector businesses. 58% of US community hospitals are non-profit, 21% are government owned, and 21% are for-profit.
+! var aco      = ACOs are groups of doctors, hospitals, and other health care providers, who come together voluntarily to give coordinated high-quality care to their Medicare patients.
+! var pbm      = Pharmacy Benefit Management.PBMs are hired to help payer control costs.PBM is a third-party administrator (TPA) of prescription drug programs for commercial health plans, self-insured employer plans,PBM costs and improve convenience and safety for consumers, employers, unions, and government program
+//! var deductible = The amount you pay for covered health care services before your insurance plan starts to pay. With a $2,000 deductible, for example, you pay the first $2,000 of covered services yourself.After you pay your deductible, you usually pay only a copayment or coinsurance for covered services. Your insurance company pays the rest.Many plans pay for certain services, like a checkup or disease management programs, before you've met your deductible. Check your plan details.
+//! var copayment = It is a monetary charge that your health insurance plan require you to pay in order to recieve a specific medical service or supply.
+! var allowed amount = It is the maximum amount a plan will pay for a covered health care service. If your provider charges more than the plan’s allowed amount, you may have to pay the difference. 
+! var medicaid = Provides medical assistance for certain individuals and families with low incomes, Jointly funded by federal and state governments.Available to people of <65 and eligibility is based on financial need.Medicaid recipients do not pay a premium for the health care coverage
+! var medicare = Provides health care coverage for people> 65 years and some disabled people.Income is not taken into account for coverage.Eligibility requirements for this program are the same from state to state.Members pay a small premium as well as co-payments for services.
+//! var procedure code = Procedure codes are a sub-type of medical classification used to identify specific surgical, medical, or diagnostic interventions.
+! var icd 10 = The International Classification of Diseases, M) is a system used by physicians  to classify all diagnoses, symptoms and procedures recorded in conjunction with hospital care in the United States.
+! var claims = Claims are the insurance claims of individual patients who has visited doctors. Its contains all the information of patient .
+! var coinsurance = It is the percentage of costs of covered health are services you pay after you have paid deductible
+! var premium = An insurance premium is the amount of money that an individual or business must pay for an insurance policy.
+! var provider = A provider network is a list of the doctors, other health care providers, and hospitals that a plan has contracted with to provide medical care to its members. 
+! var hippa = It us Health Insurance Portability and Accountability Act
+!var rev =  Revenue Codes are descriptions and dollar amounts charged for hospital services provided to a patient.  The revenue code tells an insurance company whether the procedure was performed in the emergency room, operating room or another department.
+!var diagnosis = In health care, diagnosis codes are used as a tool to group and identify diseases, disorders, symptoms, poisonings, adverse effects of drugs & chemicals, injuries and other reasons for patient encounters.
+
+
+//VerscendInfo Variables
+!var mission = Verscend plays a leadership role in helping the U.S. healthcare system undergo positive ​transformation through advanced data analytics and their intelligent application.​
+!var values = collaborative,Open,Accountable
+!var collaborative = Our employees and our customers are one team. Together, we identify opportunities, find solutions, and achieve results.
+!var open = Our relationships—internal and external—are built on integrity and understanding. We respect and appreciate diverse backgrounds, experiences, styles, approaches, and ideas.
+!var accountable = We own our decisions, actions, and results, and we keep our promises. We set high expectations for ourselves and for the value we deliver to our customers.
+!var emlpoyeelink = link
+!var canteenapp = please visit this link :
+!var vconnect = visit this link
+!var Vlibrary = visit this link
+!var compliance = visit this link
+!var verscendOffices = South Jordan,Waltham, Morrisville,Richmond,Bloomington,Kathmandu,Draper and Towson
+!var southJordan = tel: (801) 285-5800,fax: (801) 285-5801
+!var Waltham = tel: (781) 693-3700 fax: (781) 478-0217
+!var Morrisville = tel: (919) 313-1600 fax: (919) 313-1699
+!var Richmond = tel: (804) 381-4166 fax: (804) 254-4166
+!var Bloomington = tel: (952) 417-7272 fax: (952) 941-5347
+!var Kathmandu = tel: +977-1-443-5625 fax: +977-1-443-5592
+!var Draper = tel: (801) 545-3700
+!var Towson = tel: (866) 380-8477 fax: (410) 938-8621​
+! var route1 = Start from office -> New baneshwor - > Koteshwor - > Jadibuti -> Lokanthali - > Kaushaltar - > Ghatthaghar - > Purano Thimi - > Byasi - > Chyamasing - > Suryabinak - > Verscend
+! var route2 = Start from office -> Lazimpat -> Maharajgunj - > Basundhara -> Balaju -> Kalanki - > Rabibhawan -> Office
+! var route3 = Start from office - > Gyaneshower -> Maitidevi -> Purano Baneshower  -> Gaushala - > Chabel - > Office
+! var route4 = Start form office -> Putalisadak -> Maitighar -> Baneshower -> Sankhamul -> Chakupat -> Patan Dhoka -> Patan Sundhara -> Guwarko - > Mahalaxmithan - > Akantakuna -> Office
+!var meetingroom = rara,rupa,phewa,phoksundo,gosainkunda,tilicho,gokyo,5b and 6
+!var rara = ext: 185 ,IP 182.93.93.66 ,floor : ground ,capacity: 25
+!var rupa = ext: 183​, floor : ground, capacity: 6 to 8
+!var phewa = ext: 184 floor : ​ground, capacity: 22
+!var phoksundo = ext: 223 ,IP 182.93.93.69, floor : 2nd ,capacity: 6 to 8
+!var gosainkunda = ext: 314, IP 182.93.93.68 , floor : 3rd ,capacity: 6 to 8
+!var tilicho = ext: 604, floor : 5th, capacity: 6-8
+!var gokyo = ext: 421, IP: 182.93.93.70 floor : 4th, capacity: 6 to 8
+!var 5b = ext: 604 floor : 5th capacity: 6-8
+!var ​6 = capacity: 300-400 floor : 6th floor
+!var officetime =  10am-7pm(regular shift) and  1pm to 10pm(night shift)
+!var quiz = use this link
+!var hr = 507 or 519
+!var it = 515 or 517
+!var front desk = 0 or 100 or 182
+!var office manager = 181
+!var calender = use this link
+!var department = R&D1,R&D2,Operation and Engineering Service
+!var payroll = please visit this link
+!var doctor = 187
+!var servicenow = please visit this link for service now
+!var lunchtime = 12:00 pm to 2:00 pm
+!var snaktime = 4:00pm
+!var dinnertime = 7:00 pm
+!var canteenext = 193
+!var guard = 188
+
+
+
+
+
+//verscend product variable
+! var product = Verscend Products are Payment Accuracy, Risk Adjustment , Quality and Performance and Mediconnect
+! var payment accuracy = Verscend Payment Accuracy solutions make up one of the longest standing solution sets in the market for addressing improper healthcare claims and fraud, waste and abuse (FWA). Show more
+! var mediconnect = Verscend recognizes that law firms, life insurance providers, and worker's compensation fund organizations often need quick access to medical information, but this is easier said than done. Our affiliate MediConnect is here to he
+! var quality and performance = Verscend’s Quality and Performance solutions allow health plans to not only analyze and report quality measures accurately and efficiently but also help all healthcare stakeholders drive the purchase, delivery and utilization of higher-value healthcare.
+! var risk adjustment= Our Risk Adjustment solutions offer end to end support for all payment and reconciliation facets of a risk adjusted payment model. Our solutions are built around the CMS calendar and leverage the experience of our professional staff. Two types Medicare Risk Adjustment and  Commercial Risk Adjustment
+
+
+
+// Substitutions
+! sub &quot;    = "
+! sub &apos;    = '
+! sub &amp;     = &
+! sub &lt;      = <
+! sub &gt;      = >
+! sub +         = plus
+! sub -         = minus
+! sub /         = divided
+! sub *         = times
+! sub i'm       = i am
+! sub i'd       = i would
+! sub i've      = i have
+! sub i'll      = i will
+! sub don't     = do not
+! sub isn't     = is not
+! sub you'd     = you would
+! sub you're    = you are
+! sub you've    = you have
+! sub you'll    = you will
+! sub he'd      = he would
+! sub he's      = he is
+! sub he'll     = he will
+! sub she'd     = she would
+! sub she's     = she is
+! sub she'll    = she will
+! sub they'd    = they would
+! sub they're   = they are
+! sub they've   = they have
+! sub they'll   = they will
+! sub we'd      = we would
+! sub we're     = we are
+! sub we've     = we have
+! sub we'll     = we will
+! sub whats     = what is
+! sub what's    = what is
+! sub what're   = what are
+! sub what've   = what have
+! sub what'll   = what will
+! sub can't     = can not
+! sub whos      = who is
+! sub who's     = who is
+! sub who'd     = who would
+! sub who'll    = who will
+! sub don't     = do not
+! sub didn't    = did not
+! sub it's      = it is
+! sub could've  = could have
+! sub couldn't  = could not
+! sub should've = should have
+! sub shouldn't = should not
+! sub would've  = would have
+! sub wouldn't  = would not
+! sub when's    = when is
+! sub when're   = when are
+! sub when'd    = when did
+! sub y         = why
+! sub u         = you
+! sub ur        = your
+! sub r         = are
+! sub n         = and
+! sub im        = i am
+! sub wat       = what
+! sub wats      = what is
+! sub ohh       = oh
+! sub becuse    = because
+! sub becasue   = because
+! sub becuase   = because
+! sub practise  = practice
+! sub its a     = it is a
+! sub fav       = favorite
+! sub fave      = favorite
+! sub yesi      = yes i
+! sub yetit     = yet it
+! sub iam       = i am
+! sub welli     = well i
+! sub wellit    = well it
+! sub amfine    = am fine
+! sub aman      = am an
+! sub amon      = am on
+! sub amnot     = am not
+! sub realy     = really
+! sub iamusing  = i am using
+! sub amleaving = am leaving
+! sub yuo       = you
+! sub youre     = you are
+! sub didnt     = did not
+! sub ain't     = is not
+! sub aint      = is not
+! sub wanna     = want to
+! sub brb       = be right back
+! sub bbl       = be back later
+! sub gtg       = got to go
+! sub g2g       = got to go
+! sub lyl       = love you lots
+! sub gf        = girlfriend
+! sub g/f       = girlfriend
+! sub bf        = boyfriend
+! sub b/f       = boyfriend
+! sub b/f/f     = best friend forever
+! sub :-)       = smile
+! sub :)        = smile
+! sub :d        = grin
+! sub :-d       = grin
+! sub :-p       = tongue
+! sub :p        = tongue
+! sub ;-)       = wink
+! sub ;)        = wink
+! sub :-(       = sad
+! sub :(        = sad
+! sub :'(       = cry
+! sub :-[       = shy
+! sub :-\       = uncertain
+! sub :-/       = uncertain
+! sub :-s       = uncertain
+! sub 8-)       = cool
+! sub 8)        = cool
+! sub :-*       = kissyface
+! sub :-!       = foot
+! sub o:-)      = angel
+! sub >:o       = angry
+! sub :@        = angry
+! sub 8o|       = angry
+! sub :$        = blush
+! sub :-$       = blush
+! sub :-[       = blush
+! sub :[        = bat
+! sub (a)       = angel
+! sub (h)       = cool
+! sub 8-|       = nerdy
+! sub |-)       = tired
+! sub +o(       = ill
+! sub *-)       = uncertain
+! sub ^o)       = raised eyebrow
+! sub (6)       = devil
+! sub (l)       = love
+! sub (u)       = broken heart
+! sub (k)       = kissyface
+! sub (f)       = rose
+! sub (w)       = wilted rose
+
+// Person substitutions
+! person i am    = you are
+! person you are = I am
+! person i'm     = you're
+! person you're  = I'm
+! person my      = your
+! person your    = my
+! person you     = I
+! person i       = you
+
+// Set arrays
+
+! array malenoun   = male guy boy dude boi man men gentleman gentlemen
+! array femalenoun = female girl chick woman women lady babe
+! array mennoun    = males guys boys dudes bois men gentlemen
+! array womennoun  = females girls chicks women ladies babes
+! array lol        = lol lmao rofl rotfl haha hahaha
+! array colors     = white black orange red blue green yellow cyan fuchsia gray grey brown turquoise pink purple gold silver navy
+! array height     = tall long wide thick
+! array measure    = inch in centimeter cm millimeter mm meter m inches centimeters millimeters meters
+! array yes        = yes yeah yep yup ya yea
+! array no         = no nah nope nay
+! array column = billed claseq clasub clidone clientreviewflg clisugdate clisugpaid comment created deduct defensecode deleted drgcode dx dxind editflg editsrc edittype flagseq hcidone hcisugdate hcisugpaid icd9proc icd9procind issav lastupdated linno linseq network orderno override paid prepep reccode repriceamt repricesav review ruledata1 ruledata2 ruledata3 ruleseq saving subproduct sugpaid sugproc sugunits topflag trigclaseq trigclasub triglinno triglinseq active batchdate batchid batchseq cliflgclm cliflglin cliflgpd cliflgprv cliflgsav cliopenlogic clipendedclaims cliunrevclm cliunrevlin cliunrevpd cliunrevprv cliunrevsav createdate denreldate denreluser dentcliflgclm dentcliflglin dentcliflgpd dentcliflgprv dentcliflgsav dentcliopenlogic dentclipendedclaims dentcliunrevclm dentcliunrevlin dentcliunrevpd dentcliunrevprv dentcliunrevsav denthciflgclm denthciflglin denthciflgpd denthciflgprv denthciflgsav denthciopenlogic denthcipendedclaims denthciunrevclm denthciunrevlin denthciunrevpd denthciunrevprv denthciunrevsav dentinitflgclm dentinitflglin dentinitflgpd dentinitflgprv dentinitflgsav dentprocclms dentproclins dentprocpaid dentprocprv dentrelflgclm dentrelflglin dentrelflgpd dentrelflgprv dentrelflgsav endtime facreldate facreluser faccliflgclm faccliflglin faccliflgpd faccliflgprv faccliflgsav faccliopenlogic facclipendedclaims faccliunrevclm faccliunrevlin faccliunrevpd faccliunrevprv faccliunrevsav fachciflgclm fachciflglin fachciflgpd fachciflgprv fachciflgsav fachciopenlogic fachcipendedclaims fachciunrevclm fachciunrevlin fachciunrevpd fachciunrevprv fachciunrevsav facinitflgclm facinitflglin facinitflgpd facinitflgprv facinitflgsav facprocclms facproclins facprocpaid facprocprv facrelflgclm facrelflglin facrelflgpd facrelflgprv facrelflgsav finreldate finreluser ficliflgclm ficliflglin ficliflgpd ficliflgprv ficliflgsav ficliopenlogic ficlipendedclaims ficliunrevclm ficliunrevlin ficliunrevpd ficliunrevprv ficliunrevsav fihciflgclm fihciflglin fihciflgpd fihciflgprv fihciflgsav fihciopenlogic fihcipendedclaims fihciunrevclm fihciunrevlin fihciunrevpd fihciunrevprv fihciunrevsav fiinitflgclm fiinitflglin fiinitflgpd fiinitflgprv fiinitflgsav fiprocclms fiproclins fiprocpaid fiprocprv firelflgclm firelflglin firelflgpd firelflgprv firelflgsav frdreldate frdreluser frdcliflgclm frdcliflglin frdcliflgpd frdcliflgprv frdcliflgsav frdcliopenlogic frdclipendedclaims frdcliunrevclm frdcliunrevlin frdcliunrevpd frdcliunrevprv frdcliunrevsav frdhciflgclm frdhciflglin frdhciflgpd frdhciflgprv frdhciflgsav frdhciopenlogic frdhcipendedclaims frdhciunrevclm frdhciunrevlin frdhciunrevpd frdhciunrevprv frdhciunrevsav frdinitflgclm frdinitflglin frdinitflgpd frdinitflgprv frdinitflgsav frdprocclms frdproclins frdprocpaid frdprocprv frdrelflgclm frdrelflglin frdrelflgpd frdrelflgprv frdrelflgsav hciflgclm hciflglin hciflgpd hciflgprv hciflgsav hciopenlogic hcipendedclaims hciunrevclm hciunrevlin hciunrevpd hciunrevprv hciunrevsav hcidental hcifacility hcifirst hcifraud initflgclm initflglin initflgpd initflgprv initflgsav isdirty lastrefreshed origclms origfile origlins origpaid origprv prepepclm prepepedits prepeplin prepeppd prepepsav procclms proclins procpaid procprv relflgclm relflglin relflgpd relflgprv relflgsav returnfileb sndaprdate starttime adjstatus admitdx admitdxind allowed billtyp billtype cap coin condtyp dx1 dx1ind dx2 dx2ind dx3 dx3ind dx4 dx4ind dx5 dx5ind dx6 dx6ind dx7 dx7ind dx8 dx8ind dx9 dx9ind edo elgdate formtype hcirun icd9proc1 icd9proc1ind icd9proc2 icd9proc2ind icd9proc3 icd9proc3ind icd9proc4 icd9proc4ind icd9proc5 icd9proc5ind icd9proc6 icd9proc6ind inelgdt m1 m1x m2 m2x m3 m3x ndc ndctype oralcavity patdob patseq patsex patzip po posx ppoamt proc proctype proctypex procx prvgeo prvseq prvspec prvspecx prvzip revcode revcodetype rxstrength skipfraudstats toothno toothsurf tos tosx unit addr1 addr2 alertlastupdated alertstatus billaddr1 billaddr2 billcity billstate billzip city clientspec clitype compositerank compositescore dateadded degree dentalprofilereview facility firstname fraud groupname groupprvseq grouptin lastname mcrprovid middleinit note npi provid provname provnum specialty state tin upin xwalkspec zip accidentdate adjustmentind admittingprovider admitcode admitdate admitdxcode allowedamount allowbenefitamt altprocedurecode amisysproviderid bankcode benefitpackage benefitpaycode bhmedindicator billedamount billedamountheader billedamountnetdetail billedamountnetheader billclass businessunit capitationind categorycode centenedivisioncode centeneplancode centenereferringaffnbr centenereferringprovnbr claimfromdosccyymmdd claimnumber claimproc1 claimproc2 claimproc3 claimproc4 claimproc5 claimstatus claimthrudosccyymmdd claimtype claimunitvistsdays coinsurance component copay dateofremitccyymmdd dayscovered deductible dischargecode dischargedate drgallowedamountheader drgind excode facilitytype feeschedule formertcn formtype1 hciadjstatus hciclaseq hciclasub hcidos hcifile hcilinseq hcivoid hospitaldays icd9code icd9code2 icd9code3 icd9code4 icd9code5 icdindicator illness institutionname linenumber lineofbusiness medicalrecordnumber medicareallowedamtline memberid memberreferralind memberrelationship modifier1 modifier2 modifier3 modifier4 naturehspadmission ndcnumber occurance occurancecode1 occurancecode2 occurancecode3 occurancecode4 occurancecode5 occurancecode6 occurancecode7 occurancecode8 occurancedate1 occurancedate2 occurancedate3 occurancedate4 occurancedate5 occurancedate6 occurancedate7 occurancedate8 originalclaimlinenumber originalclaimnumber otherinspaiddetail paidamountdetail paidamountheader patientaccountnum patientadddress1 patientadddress2 patientcity patientdob patientfirstname patientid patientlastname patientmiddleinit patientsex patientstate patientzip payclass paytocode payservice payservicecode paytogroupname paytoinstitutionname paytoprovideraddr1 paytoprovideraddr2 paytoprovidercity paytoproviderfirstname paytoproviderlastname paytoprovidernpi paytoproviderstate paytoproviderzip placeofservice plancode planstatecode pmgid poaind1 poaind2 poaind3 poaind4 poaind5 primarycoverageind primarycoveragename primarycoveragenum principalprocedurecode principalproctype principalproctype2 procedurecode procedurecodingmethod providerreferralnum providerspecialtycode providertaxid providertype receiveddate referralnum referraltype referringprovidernpi relation renderingprovideraddr1 renderingprovideraddr2 renderingprovidercity renderingproviderfirstname renderingproviderlastname renderingprovidermiddleinit renderingprovidernpi renderingproviderparstatus renderingproviderstate renderingproviderzip resolution revenuecode rider riskpopulation rmccodeatdateofservice servicedatefrom servicedateto servicingprovnumber sourceadmission srclineitemdtlcnt statusx submitterid tplind tppallowamt tppamt tpstat transactionstatus transactiontype treatmenttype typeofbill valueamt1 valueamt2 valueamt3 valueamt4 valueamt5 valueamt6 valueamt7 valueamt8 valuecode1 valuecode2 valuecode3 valuecode4 valuecode5 valuecode6 valuecode7 valuecode8 wcind dayval monthval yearval adjpaid dentappealfee dentfraudfee dentfraudsav dentrepricefee dentrepricesav dentreviewfee dentreviewsav expense facappealfee facfraudfee facfraudsav facrepricefee facrepricesav facreviewfee facreviewsav firstappealfee firstfraudfee firstfraudsav firstrepricefee firstrepricesav firstreviewfee firstreviewsav invamt invby invdate invnum invoiceseq invrectyp invstatus postdate preinvamt preinvnum totsavings expamt expcode expdate expfee expmin invexpseq product userid logicseq requestdate requestsrc status empaddr1 empaddr2 empcity empdob empid empname empsex empssn empstate empzip familyno groupseq pataddr1 pataddr2 patcity patid patname patnum patrelate patssn patstate planno createdby employeegender employeephone gender lastupdatedby middlename phone relationship addrtype hadseq gpnseq gtnseq caseinvestigator casestatus casetrackerid medawarealertissued action flagsavings groupid id origsavings origsugpaid overdate previnvnum totalclaimsavings deltainsavings expired firingcontextnum flagcreated flaglastupdated initialsavings invoicedate invoicelocked invoicesavingsid lineno previnvoicesavingsid realm utilizationamnt utilizationcd allowcode claimno denycode editflag editproduct invoicetype mod1 mod2 mod3 reasontxt rulerequestinfo suspectproviderseq triggeredflg appealseq appealsub appealtype assignedto billableminutes catcodeseq clientcode clientappealid clientcomments completeddate consultant deny1 deny2 documentsreceiveddate documenttypes duedate externaldocumentid faxpages flag groupingseq lastmodified lastmodifiedby letter linkedclaims pay1 pay2 primaryreviewer priority senderemailaddress sendername senderphone senderphoneext test testcol actionby appealauditseq auditaction auditdate hcisugcode nonbillableminutes reasoncode result
+! array hardware = monitor cpu desktop laptop mouse software hardware admin install workstation
+! array resource = headphone cable lan mouse keyword pen pencil book copy
